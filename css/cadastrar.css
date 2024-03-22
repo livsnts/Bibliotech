@@ -1,0 +1,385 @@
+.corpo {
+    align-items: center;
+    display: flex;
+    height: auto;
+    justify-items: center;
+    margin: 0;
+    width: auto;
+}
+
+
+
+.geekcb-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 150vw;
+}
+
+.geekcb-form-contact {
+    background-color: #f8f7ff;
+    border: 2px solid black;
+    box-shadow: 15px 15px 1px #9381ff, 15px 15px 1px 2px black;
+    padding: 50px 100px;
+    transition: .2s all linear;
+    
+}
+
+.geekcb-form-contact1 {
+    background-color: #f8f7ff;
+    border: 2px solid black;
+    box-shadow: 15px 15px 1px #9381ff, 15px 15px 1px 2px black;
+    padding: 50px 20px 50px 20px;
+    transition: .2s all linear;
+    width: 93%;
+}
+
+
+.geekcb-field {
+    background-color: transparent;
+    border: none;
+    border-bottom: 5px solid black;
+    color: black;
+    display: block;
+    font-family: "Fjalla One";
+    font-size: 14pt;
+    line-height: 28pt;
+    margin-bottom: 28pt;
+    min-width: 250px;
+    outline: none;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.geekcb-field:focus {
+    border-bottom: 5px solid #9381ff;
+}
+
+.geekcb-field::selection {
+    background-color: #ffd8be;
+}
+
+.geekcb-btn {
+    background-color: #9381ff;
+    border: 1px solid black;
+    box-shadow: 3px 3px 1px #ffd8be, 3px 3px 1px 1px black;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    letter-spacing: 2px;
+    line-height: 28pt;
+    margin: 0 auto;
+    outline: none;
+    padding: 0 20px;
+    text-transform: uppercase;
+    transition: .2 all ease-in-out;
+}
+
+.geekcb-btn:hover {
+    background-color: #ffd8be;
+    border: 1px solid black;
+    box-shadow: -3px -3px 1px #9381ff, -3px -3px 1px 1px black;
+    color: black;
+}
+
+.botaolistar {
+    background-color: #9381ff;
+    border: 1px solid black;
+    box-shadow: 3px 3px 1px #ffd8be, 3px 3px 1px 1px black;
+    color: #fff;
+    cursor: pointer;
+    line-height: 20pt;
+    outline: none;
+    padding: 7.45px 10px;
+    text-transform: uppercase;
+    transition: .2 all ease-in-out;
+    width: 8%;
+    align-items: flex-start;
+}
+
+.botaolistar:hover {
+    background-color: #ffd8be;
+    border: 1px solid black;
+    box-shadow: -3px -3px 1px #9381ff, -3px -3px 1px 1px black;
+    color: black;
+}
+
+.geekcb-btn:active {
+    box-shadow: 0 0 0 #ffd8be;
+    transform: translateX(-3px) translateY(-3px);
+}
+
+.geekcb-field:-webkit-autofill,
+.geekcb-field:-webkit-autofill:hover,
+.geekcb-field:-webkit-autofill:focus {
+    border-bottom: 5px solid #95a4ff;
+    box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.esquerda {
+    padding-right: 50px;
+}
+
+.titulo {
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: Fjalla One;
+}
+
+.tituloLeitor {
+    padding-bottom: 10px;
+    text-align: left;
+    font-family: Fjalla One;
+}
+
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+select {
+    background-color: transparent;
+    display: block;
+    border: none;
+    border-bottom: 5px solid black;
+    color: black;
+    font-family: "Fjalla One";
+    border-radius: 0;
+    border-bottom-color: black;
+    font-size: 14pt;
+    line-height: 28pt;
+    margin-bottom: 28pt;
+    min-width: 250px;
+    outline: none;
+    padding-left: 5px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.fonte-status{
+    opacity:.5;
+}
+.select:focus {
+border-bottom: 5px solid #9381ff;
+}
+
+.select::selection {
+background-color: #ffd8be;
+}
+
+.hidden {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  #minha-tabela {
+    background-color: transparent;
+    border: 5px solid black;
+    color: black;
+    display: block;
+    font-family: "Fjalla One";
+    font-size: 14pt;
+    line-height: 28pt;
+    margin-bottom: 28pt;
+    min-width: 250px;
+    outline: none;
+    padding-left: 5px;
+    width: 100%;
+  }
+
+  .botao{
+  background-color: #9381ff;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px #ffd8be, 3px 3px 1px 1px black;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: 2px;
+  line-height: 20pt;
+  margin: 0 auto;
+  outline: none;
+  padding: 0 10px;
+  text-transform: uppercase;
+  transition: .2 all ease-in-out;
+  }
+
+  .botao:hover {
+    background-color: #ffd8be;
+    border: 1px solid black;
+    box-shadow: -3px -3px 1px #9381ff, -3px -3px 1px 1px black;
+    color: black;
+}
+
+.botao:active {
+    box-shadow: 0 0 0 #ffd8be;
+    transform: translateX(-3px) translateY(-3px);
+}
+
+.botaopesquisar{
+    background-color: #9381ff;
+    border: 1px solid black;
+    box-shadow: 3px 3px 1px #ffd8be, 3px 3px 1px 1px black;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 2px;
+    line-height: 20pt;
+    margin: 0 auto;
+    outline: none;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    transition: .2 all ease-in-out;
+    margin-left: 10px;
+    }
+  
+    .botaopesquisar:hover {
+      background-color: #ffd8be;
+      border: 1px solid black;
+      box-shadow: -3px -3px 1px #9381ff, -3px -3px 1px 1px black;
+      color: black;
+  }
+  
+  .botaopesquisar:active {
+      box-shadow: 0 0 0 #ffd8be;
+      transform: translateX(-3px) translateY(-3px);
+  }
+
+  body :focus-within .botaopesquisar {
+    background-color: #ffd8be;
+    border: 1px solid black;
+    box-shadow: 3px 3px 1px #9381ff, 3px 3px 1px 1px black;
+    color: black;
+}
+
+body :focus-within .botaopesquisar:hover {
+    background-color: #ffd8be;
+      border: 1px solid black;
+      box-shadow: -3px -3px 1px #9381ff, -3px -3px 1px 1px black;
+      color: black;
+}
+
+.botaopesquisarAcervo{
+    background-color: #9381ff;
+    border: 1px solid black;
+    box-shadow: 3px 3px 1px #ffd8be, 3px 3px 1px 1px black;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 2px;
+    line-height: 20pt;
+    margin: 0 auto;
+    outline: none;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    transition: .2 all ease-in-out;
+    margin-left: 10px;
+    display: flex;
+    }
+  
+    .botaopesquisarAcervo:hover {
+      background-color: #9381ff;
+      border: 1px solid black;
+      box-shadow: -3px -3px 1px #ffd8be, -3px -3px 1px 1px black;
+      color: white;
+  }
+  
+  .botaopesquisarAcervo:active {
+      box-shadow: 0 0 0 #ffd8be;
+      transform: translateX(-3px) translateY(-3px);
+  }
+
+  body :focus-within .botaopesquisarAcervo {
+    background-color:#9381ff;
+    border: 1px solid black;
+    box-shadow: 3px 3px 1px #ffd8be, 3px 3px 1px 1px black;
+    color: white;
+}
+
+body :focus-within .botaopesquisarAcervo:hover {
+    background-color: #9381ff;
+      border: 1px solid black;
+      box-shadow: -3px -3px 1px #ffd8be, -3px -3px 1px 1px black;
+      color: white;
+}
+
+.botaopesquisarAcervo2{
+    background-color: #9381ff;
+    border: 1px solid black;
+    box-shadow: 3px 3px 1px #ffd8be, 3px 3px 1px 1px black;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 2px;
+    line-height: 20pt;
+    margin: 0 auto;
+    outline: none;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    transition: .2 all ease-in-out;
+    margin-left: 10px;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+  
+    .botaopesquisarAcervo2:hover {
+      background-color: #9381ff;
+      border: 1px solid black;
+      box-shadow: -3px -3px 1px #ffd8be, -3px -3px 1px 1px black;
+      color: white;
+  }
+  
+  .botaopesquisarAcervo2:active {
+      box-shadow: 0 0 0 #ffd8be;
+      transform: translateX(-3px) translateY(-3px);
+  }
+
+  body :focus-within .botaopesquisarAcervo2 {
+    background-color:#9381ff;
+    border: 1px solid black;
+    box-shadow: 3px 3px 1px #ffd8be, 3px 3px 1px 1px black;
+    color: white;
+}
+
+body :focus-within .botaopesquisarAcervo2:hover {
+    background-color: #9381ff;
+      border: 1px solid black;
+      box-shadow: -3px -3px 1px #ffd8be, -3px -3px 1px 1px black;
+      color: white;
+}
+
+
+.corpolistar {
+    align-items: center;
+    display: flex;
+    height: auto;
+    justify-items: center;
+    margin: 0;
+    width: auto;
+    background-color: white;
+}
+
+.botaoLeitor{
+    margin: 2% 0 0 85%;
+   
+}
+
+.logoLeitor{
+    align-content: baseline; 
+}
+
+
+
+

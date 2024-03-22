@@ -1,0 +1,218 @@
+.acervocontainer {
+  max-width: 90%; 
+  margin: 1% 3% 4% 9%; 
+}
+
+.paginacao{
+  font-size: 1.4em;
+  font-family: "Fjalla One";
+  width: fit-content;
+  margin-top: 2%;
+}
+
+.paginacao a{
+text-decoration: none;
+color:#9381ff;
+align-content: center;
+font-family: "Fjalla One";
+}
+    
+  .wrapperAcervo{
+    display: inline-block;
+    width: 290px;
+    height: 500px;
+    background: white;
+    margin-left: 10% auto;
+    margin-right: 10% auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0;
+    transform: scale(0.95);
+    transition: box-shadow 0.5s, transform 0.5s;
+    &:hover{
+      transform: scale(1);
+      box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+      
+    }
+
+    
+    
+    .containerAcervo{
+      width:100%;
+      height:100%;
+      .topAcervo{
+        height: 80%;
+        width:100%;
+
+        
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+  
+      }
+      .bottomAcervo{
+        width: 200%;
+        height: 10%;
+        transition: transform 0.5s;
+        &.clicked{
+          transform: translateX(-50%);
+        }
+        h1{
+            margin:0;
+            padding:0;
+        }
+        p{
+            margin:0;
+            padding:0;
+        }
+        .leftAcervo{
+          height:100%;
+          width: 50%;
+          background: #f4f4f4;
+          position:relative;
+          float:left;
+          .detailsAcervo{
+            padding: 20px;
+            float: left;
+            width: calc(70% - 60px);
+            display: flexbox;
+          }
+          .buyAcervo{
+            float:right;
+            width: calc(30% - 2px);
+            height:100%;
+            background: #f1f1f1;
+            transition: background 0.5s;
+            border-left:solid thin rgba(0,0,0,0.1);
+            i{
+              font-size:30px;
+              padding:30px;
+              color: #254053;
+              transition: transform 0.5s;
+            }
+            &:hover{
+              background: #A6CDDE;
+            }
+            &:hover i{
+              transform: translateY(5px);
+              color:#00394B;
+            }
+          }
+        }
+        .rightAcervo{
+          width: 50%;
+          background: #A6CDDE;
+          color: white;
+          float:right;
+          height:200%;
+          overflow: hidden;
+          .detailsAcervo{
+            padding: 20px;
+            float: right;
+            width: calc(70% - 40px);
+            display: flexbox;
+          }
+          .doneAcervo{
+            width: calc(30% - 2px);
+            float:left;
+            transition: transform 0.5s;
+            border-right:solid thin rgba(255,255,255,0.3);
+            height:50%;
+            i{
+              font-size:30px;
+              padding:30px;
+              color: white;
+            }
+          }
+          .removeAcervo{
+            width: calc(30% - 1px);
+            clear: both;
+            border-right:solid thin rgba(255,255,255,0.3);
+            height:50%;
+            background: #9381ff;
+            transition: transform 0.5s, background 0.5s;
+            &:hover{
+              background: #9381ff;
+            }
+            &:hover i{
+              transform: translateY(5px);
+            }
+            i{
+              transition: transform 0.5s;
+              font-size:30px;
+              padding:30px;
+              color: white;
+            }
+          }
+          &:hover{
+            .removeAcervo, .doneAcervo{
+              transform: translateY(-100%);
+            }
+          }
+        }
+      }
+    }
+    
+    .insideAcervo{
+      z-index:9;
+      background: #9381ff;;
+      width:140px;
+      height:150px;
+      position: absolute;
+      top: -70px;
+      right: -70px;
+      border-radius: 0px 0px 200px 200px;
+      transition: all 0.5s, border-radius 2s, top 1s;
+      overflow: hidden;
+      .icon{
+        position:absolute;
+        right:85px;
+        top:85px;
+        color:white;
+        opacity: 1;
+        
+      }
+   
+      &:hover{
+        width:100%;
+        right:0;
+        top:0;
+        border-radius: 0;
+        height:80%;
+        .icon{
+          opacity: 0;
+          right:15px;
+          top:15px;
+        }
+        .contentsAcervo{
+          opacity: 1;
+          transform: scale(1);
+          transform: translateY(0);
+          color: white;
+        }
+      }
+      .contentsAcervo{
+        padding: 5%;
+        opacity: 0;
+        transform: scale(0.5);
+        transform: translateY(-200%);
+        transition: opacity 0.2s, transform 0.8s;
+        table{
+          text-align:left;
+          width:100%;
+        }
+        h1, p, table{
+          color: white;
+        }
+        p{
+          font-size:13px;
+        }
+      }
+    }
+    .insideAcervo td{
+      color: white;
+    }
+  }
+    
